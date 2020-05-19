@@ -45,7 +45,7 @@ public class SpringDataJpaApplication {
             log.info(Employee.toString());
             log.info("");
 
-     // Using Automatic Custom Queries
+            // Using Automatic Custom Queries
 
             // fetch an  Employee by name
             List<Employee> EmployeeName = repository.findByName("Saman");
@@ -55,7 +55,7 @@ public class SpringDataJpaApplication {
             log.info("");
 
             // fetch an employee by name and age
-            List<Employee> EmployeeList = repository.findByNameAndAgeGreaterThan("Kamal",25);
+            List<Employee> EmployeeList = repository.findByNameAndAgeGreaterThan("Kamal", 25);
             log.info("Employee found with name ('name') and age > 25 :");
             log.info("--------------------------------");
             log.info(EmployeeList.toString());
